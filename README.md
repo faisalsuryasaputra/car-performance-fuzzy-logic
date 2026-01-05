@@ -54,9 +54,9 @@ Data Preprocessing: Filters data for 2019-2020 models, handles missing values, a
 📊 Methodology (Rules Example)
 The logic relies on expert rules, for example:
 
-- IF Engine is Small AND Mileage is High AND Price is Low THEN Performance is Medium.
+   - IF Engine is Small AND Mileage is High AND Price is Low THEN Performance is Medium.
 
-- IF Engine is Medium AND Mileage is Medium AND Price is Medium THEN Performance is High.
+   - IF Engine is Medium AND Mileage is Medium AND Price is Medium THEN Performance is High.
 
 📈 Results
 The script outputs a comprehensive table sorting vehicles by their calculated fuzzy scores and classifies them into:
@@ -64,3 +64,5 @@ The script outputs a comprehensive table sorting vehicles by their calculated fu
 - Cukup (Fair)
 - Bagus (Good)
 It also generates visualizations to help understand the decision boundary of the fuzzy system.
+
+Telkom University - S1 Informatika
