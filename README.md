@@ -39,3 +39,28 @@ Make sure you have the following Python libraries installed:
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-fuzzy scikit-learn
+```
+
+🚀 Features
+Data Preprocessing: Filters data for 2019-2020 models, handles missing values, and cleans unit strings (e.g., removing 'CC' and 'kmpl').
+- Fuzzy Logic Implementation:
+   - Defines Triangular Membership Functions (Trimf).
+   - Implements 27 distinct fuzzy rules.
+- Comparison: Calculates both Mamdani and Sugeno scores for every vehicle in the dataset.
+- Visualization:
+  - 3D Surface plots for Sugeno output.
+  - 2D plots for Membership Functions.
+- Evaluation: Computes Accuracy and F1-Score to compare the Sugeno approximation against the Mamdani baseline.
+📊 Methodology (Rules Example)
+The logic relies on expert rules, for example:
+
+- IF Engine is Small AND Mileage is High AND Price is Low THEN Performance is Medium.
+
+- IF Engine is Medium AND Mileage is Medium AND Price is Medium THEN Performance is High.
+
+📈 Results
+The script outputs a comprehensive table sorting vehicles by their calculated fuzzy scores and classifies them into:
+- Buruk (Poor)
+- Cukup (Fair)
+- Bagus (Good)
+It also generates visualizations to help understand the decision boundary of the fuzzy system.
